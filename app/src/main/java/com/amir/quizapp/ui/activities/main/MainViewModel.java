@@ -1,6 +1,5 @@
-package com.amir.quizapp.ui.main;
+package com.amir.quizapp.ui.activities.main;
 
-import androidx.lifecycle.MediatorLiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -10,9 +9,5 @@ public class MainViewModel extends ViewModel {
 
     public void getName(){
         nameData.setValue("Victory");
-    }
-
-    public void getName2(){
-        nameData.setValue("Test");
     }
 }

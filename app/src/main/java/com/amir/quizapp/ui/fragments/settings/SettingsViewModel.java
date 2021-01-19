@@ -1,4 +1,4 @@
-package com.amir.quizapp.ui.settings;
+package com.amir.quizapp.ui.fragments.settings;
 
 import androidx.lifecycle.ViewModel;
 

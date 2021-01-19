@@ -1,4 +1,4 @@
-package com.amir.quizapp.ui.main;
+package com.amir.quizapp.ui.fragments.settings;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -14,25 +14,25 @@ import android.view.ViewGroup;
 
 import com.amir.quizapp.R;
 
-public class MainFragment extends Fragment {
+public class SettingsFragment extends Fragment {
 
-    private MainViewModel mViewModel;
+    private SettingsViewModel mViewModel;
 
-    public static MainFragment newInstance() {
-        return new MainFragment();
+    public static SettingsFragment newInstance() {
+        return new SettingsFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.main_fragment, container, false);
+        return inflater.inflate(R.layout.settings_fragment, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(MainViewModel.class);
-
+        mViewModel = new ViewModelProvider(this).get(SettingsViewModel.class);
+        // TODO: Use the ViewModel
     }
 
 }

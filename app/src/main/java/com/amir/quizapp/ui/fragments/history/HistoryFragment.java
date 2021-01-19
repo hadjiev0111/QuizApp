@@ -1,17 +1,13 @@
-package com.amir.quizapp.ui.history;
+package com.amir.quizapp.ui.fragments.history;
 
 import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.amir.quizapp.R;
 
 public class HistoryFragment extends Fragment {

@@ -1,18 +1,13 @@
-package com.amir.quizapp.ui;
+package com.amir.quizapp.ui.activities.main;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
 import android.view.MenuItem;
-
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.amir.quizapp.R;
 import com.amir.quizapp.ui.adapter.MainViewPagerAdapter;
-import com.amir.quizapp.ui.main.MainViewModel;
 import com.amir.quizapp.ui.viewpager.MainViewPager;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 

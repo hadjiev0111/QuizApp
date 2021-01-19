@@ -4,10 +4,10 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
+import androidx.annotation.NonNull;
 import androidx.viewpager.widget.ViewPager;
 
 public class MainViewPager extends ViewPager {
-
     private boolean isPagingEnabled = true;
 
     public MainViewPager(Context context) {

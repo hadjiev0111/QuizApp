@@ -1,4 +1,4 @@
-package com.amir.quizapp.ui.history;
+package com.amir.quizapp.ui.fragments.history;
 
 import androidx.lifecycle.ViewModel;
 
