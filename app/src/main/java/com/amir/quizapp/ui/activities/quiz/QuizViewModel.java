@@ -13,6 +13,8 @@ import retrofit2.Response;
 
 public class QuizViewModel extends ViewModel {
 
+    private QuizResponse quizResponse;
+
     public MutableLiveData<List<Question>> questionsLiveData = new MutableLiveData<>();
 
     public void getQuestions(int id, int category, String difficulty){

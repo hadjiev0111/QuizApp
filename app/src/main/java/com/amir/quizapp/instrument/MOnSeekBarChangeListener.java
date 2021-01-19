@@ -2,7 +2,7 @@ package com.amir.quizapp.instrument;
 
 import android.widget.SeekBar;
 
-public interface MOnSeekBarChangeListener extends SeekBar.OnSeekBarChangeListener {
+public abstract interface MOnSeekBarChangeListener extends SeekBar.OnSeekBarChangeListener {
 
     @Override
     void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser);
