@@ -1,4 +1,3 @@
-
 package com.amir.quizapp.data.models;
 
 import com.google.gson.annotations.Expose;

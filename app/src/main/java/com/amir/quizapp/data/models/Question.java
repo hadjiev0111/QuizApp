@@ -1,10 +1,9 @@
 
 package com.amir.quizapp.data.models;
 
+import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
 
 public class Question {
 
@@ -26,6 +25,10 @@ public class Question {
     @SerializedName("incorrect_answers")
     @Expose
     private List<String> incorrectAnswers = null;
+
+    private int selectedPosition;
+
+    private boolean isAnswerClicked = false;
 
     public String getCategory() {
         return category;
@@ -75,4 +78,19 @@ public class Question {
         this.incorrectAnswers = incorrectAnswers;
     }
 
+    public int getSelectedPosition() {
+        return selectedPosition;
+    }
+
+    public void setSelectedPosition(int selectedPosition) {
+        this.selectedPosition = selectedPosition;
+    }
+
+    public boolean isAnswerClicked() {
+        return isAnswerClicked;
+    }
+
+    public void setAnswerClicked(boolean answerClicked) {
+        isAnswerClicked = answerClicked;
+    }
 }

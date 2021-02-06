@@ -20,5 +20,4 @@ public class QuizApiClient {
         Retrofit retrofit = new Retrofit.Builder().baseUrl("https://opentdb.com/").addConverterFactory(GsonConverterFactory.create()).build();
         return retrofit.create(QuizApi.class);
     }
-
 }
