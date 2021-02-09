@@ -67,7 +67,6 @@ public class QuizActivity extends AppCompatActivity implements QuizAdapter.OnCli
         SnapHelper snapHelper = new PagerSnapHelper();
         snapHelper.attachToRecyclerView(binding.quizRecycler);
         viewModel.currentQuestionPosition.observe(this, integer -> scrollOnClick(adapter, integer));
-        binding.skipBtn.setOnClickListener(v -> viewModel.onSkipClick(manager.findLastCompletelyVisibleItemPosition()-1));
         viewModel.finishLiveData.observe(this, this::startResultActivity);
     }
 

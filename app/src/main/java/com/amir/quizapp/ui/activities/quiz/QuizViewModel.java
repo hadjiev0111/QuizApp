@@ -94,7 +94,7 @@ public class QuizViewModel extends ViewModel {
         }.start();
     }
 
-    public void onSkipClick(int questionPosition) {
-        moveToPositionOrFinish(questionPosition);
+    public void onSkipClick() {
+        currentQuestionPosition.setValue(currentQuestionPosition.getValue()+1);
     }
 }

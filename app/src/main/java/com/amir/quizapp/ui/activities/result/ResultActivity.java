@@ -49,7 +49,7 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     private int getResultPercent(int correctAnswersCount, int amount){
-        int result = (correctAnswersCount*100)/(amount*100);
+        int result = (int) (((float) correctAnswersCount / (float) amount) * 100);
         return result;
     }
 }
